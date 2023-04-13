@@ -1,6 +1,4 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500&family=Kanit:wght@200;300&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&family=Poppins:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +7,7 @@
 }
 
 body {
-    font-family: Kanit, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: #3a3a3a;
 }
@@ -17,7 +15,7 @@ body {
 /* headings and logo */
 
 h1, h2 {
-    font-family: Changa, sans-serif;
+    font-family: 'Changa', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
