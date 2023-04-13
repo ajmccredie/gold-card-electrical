@@ -25,6 +25,7 @@ h1, h2 {
 #logo {
    margin-top: 15px;
    margin-bottom: 30px;
+   position: fixed;
 }
 
 #logo h1 {
@@ -167,6 +168,9 @@ h1, h2 {
 
  #club-ethos {
     height: 600px;
+    background-image: url(../images/circuitry.png);
+    filter: grayscale(0.8);
+    opacity: 50%;
  }
 
  #left-about {
@@ -198,6 +202,7 @@ h1, h2 {
    line-height: 20px;
    clear: both;
    margin-bottom: 50px;
+   font-size: 110%;
  }
 
  .right-about-heading {
@@ -206,27 +211,30 @@ h1, h2 {
    line-height: 20px;
    clear: both;
    margin-bottom: 50px;
+   font-size: 110%;
  }
 
  .right-about-heading h2 {
    text-align: right;
+   font-size: 110%;
  }
 
  .right-about-heading p {
    text-align: right;
- }
+   font-size: 110%;
+}
 
  #circle-container {
    width: 300px;
    height: 300px;
    padding: 30px; 
-   background: url(../images/gold-circle.png) no-repeat center center;
-   object-fit: fill;
    border: solid;
    border-color: #ccc;
    border-width: 1px;
    border-radius: 50%;
    margin: 0 auto;
+   background: url(../images/gold-circle.png) no-repeat center center;
+   object-fit: fill;
  }
 
  #circle-cover-bg {
@@ -238,7 +246,7 @@ h1, h2 {
    border-radius: 50%;
 }
 
-/* event image */
+/* course image */
 
 #times {
    background-image: url('../images/random-test-equipment.png');
