@@ -31,7 +31,7 @@ h1, h2 {
 
 #menu {
     font-size: 110%;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
 }
 
 
@@ -41,8 +41,11 @@ h1, h2 {
     line-height: 75px;
 }
 
+#menu div {
+   float: right;
+}
+
 #menu li {
-    float: right;
     list-style-type: none;
     margin: 30px;
     direction: rtl;
@@ -54,6 +57,10 @@ h1, h2 {
 
  #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
+    color:#fff;
+    font-style: italic;
+    font-weight: 150%;
+    background-image: url(../images/black-ink.png);
  }
 
  .active {
@@ -67,6 +74,10 @@ h1, h2 {
     width: 100%;
     overflow:hidden;
     position: relative;
+    background: url('../images/gold-smear-diagonal.png') no-repeat center center;
+    object-fit: cover;
+    background-size: cover;
+    object-position: center;
  }
 
  #cover-text, #cover-text h2 {
@@ -76,7 +87,10 @@ h1, h2 {
  #hero-image {
     height: 600px;
     width: 100%;
-    background: url('../images/hero-image.webp') no-repeat center center;
+    background: url('../images/gold-card-logo.png') no-repeat center center;
+    object-fit: cover;
+    background-size: cover;
+    object-position: center;
     /* animates the zoom effect on the loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
@@ -95,15 +109,15 @@ h1, h2 {
  }
 
  #cover-text {
-    font-size: 130%;
-    font-family: Changa, sans-serif;
+    font-size: 100%;
+    font-family: 'Changa', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     
     width: 300px;
     height: 200px;
     
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left: 10px;
     
     background-color: rgba(241, 109, 107, .7);
@@ -177,6 +191,8 @@ h1, h2 {
    width: 300px;
    height: 300px;
    padding: 30px; 
+   background: url(../images/gold-circle.png) no-repeat center center;
+
    border: solid;
    border-color: #ccc;
    border-width: 1px;
@@ -185,7 +201,7 @@ h1, h2 {
  }
 
  #circle-cover-bg {
-   background: url('../images/ethos-center-image.jpg') no-repeat center center;
+   background: url('../images/breaker.png') no-repeat center center;
    height: 100%;
    border-radius: 50%;
 }
@@ -193,7 +209,7 @@ h1, h2 {
 /* event image */
 
 #times {
-   background-image: url('../images/dublin-city.webp');
+   background-image: url('../images/random-test-equipment.png');
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
