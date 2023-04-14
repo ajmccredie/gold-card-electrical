@@ -23,9 +23,15 @@ h1, h2 {
 
 /* logo and home page navigation top left */
 #logo {
-   margin-top: 15px;
-   margin-bottom: 30px;
+   top: 0;
+   margin-bottom: 20px;
    position: fixed;
+   display: inline;
+   float: left;
+   direction: ltr;
+   width: 100%;
+   background-color: #fff;
+   z-index: 2;
 }
 
 #logo h1 {
@@ -37,13 +43,13 @@ h1, h2 {
    text-decoration: none;
 }
 
-#logo h1:hover {
+#logo a:hover {
    filter: drop-shadow(0 1px 3px rgba(241, 109, 107, .7));
 }
 
 .logo-home {
    height: 70px;
-   text-align: left;
+ /*  text-align: left; */
    border-radius: 50%;
    margin-top: 4px;
    margin-left: 10px;
@@ -54,17 +60,22 @@ h1, h2 {
 #menu {
     font-size: 110%;
     letter-spacing: 2px;
+    width: 100%;
+    top: 100px;
+    position: fixed;
+    z-index: 2;
 }
 
 
 /* balancing the line height */
 
-#menu, #logo {
-    line-height: 75px;
-}
-
 #menu div {
    float: right;
+   width: 100%;
+   background-color: #fff;
+   position: relative;
+   height: 60px;
+   padding-top: 10px;
 }
 
 #menu li {
@@ -72,6 +83,7 @@ h1, h2 {
     margin: 30px;
     direction: rtl;
     display: inline;
+    bottom: 0;
 }
  #menu a {
     text-decoration: none;
@@ -84,24 +96,23 @@ h1, h2 {
 
  #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
-    color:#fff;
-    font-style: italic;
     font-weight: 150%;
  }
 
  .active {
-    border-bottom: 1px solid #3a3a3a;
+    filter: drop-shadow(0 0 10px rgba(137, 119, 17, 0.8));
  }
 
  /* hero image and supporting text */
 
  #hero-outer {
-    height: 700px;
+    height: 900px;
     width: 80vw;
     margin-right: 10vw;
     margin-left: 10vw;
     overflow: hidden;
     position: relative;
+    margin-top: 400px;
     background: url('../images/gold-smear-diagonal.png') no-repeat center center;
     background-size: contain;
     object-position: center;
@@ -116,7 +127,7 @@ h1, h2 {
  #hero-image {
     width: 50vw;
     height: 600px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 15vw;
     background: url('../images/gold-card-logo.png') no-repeat center center;
     background-size: contain;
