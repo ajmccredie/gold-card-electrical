@@ -377,6 +377,24 @@ footer {
    position: absolute;
 }
 
+/* terms and conditions scroll-box and formatting */
+#ts-cs {
+   width: 70vw;
+   height: 600px;
+   margin-left: 15vw;
+   border:rgba(0, 0, 0, 0.7) 1px solid;
+   overflow-y: scroll;
+}
+
+#ts-cs .bold {
+   font-weight: bold;
+}
+
+#ts-cs p {
+   font-family: 'Times New Roman', Times, serif;
+   line-height: 180%;   
+}
+
 /* media queries */
 
 /* For larger to medium screens size from 1200px wide and down */
