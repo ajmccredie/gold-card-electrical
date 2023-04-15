@@ -188,21 +188,21 @@ h1, h2 {
 /* why train with us? */
 #welcome {
    text-align: center;
-   margin: 20px 0;
+   margin: -50px 0 20px 0;
    font-size: 280%;
 }
 
  #page-base {
    height: 600px;
- /*   background-image: url(../images/circuitry.png);
-    filter: grayscale(0.8);
-    opacity: 50%; */
+   position: relative;
  }
 
- #page-base background-image {
-      background-image: url(../images/circuitry.png);
-      filter: grayscale(0.8);
+.circuit-background {
+      height: 600px;
+      background: url(../images/circuitry.png);
+      filter: sepia(0.9);
       opacity: 50%;
+      position: absolute;
  }
 
  #left-about {
@@ -290,7 +290,7 @@ h1, h2 {
 
 /* course image */
 
-#times {
+#course-quick-links {
    background-image: url('../images/random-test-equipment.png');
    background-repeat: no-repeat;
    background-size: cover;
@@ -299,7 +299,18 @@ h1, h2 {
    overflow: hidden;
 }
 
-#times div {
+#course-quick-links a {
+   text-decoration: none;
+   color: #fafafa;
+}
+
+#course-quick-links a:hover {
+   text-decoration: none;
+   color: #fafafa;
+   font-size: 110%;
+}
+
+#course-quick-links div {
    color: #fafafa;
    background-color: rgba(0, 0, 0, .6);
    width: 20%;
@@ -311,7 +322,7 @@ h1, h2 {
    box-sizing: border-box;
 }
 
-#times h2 {
+#course-quick-links h2, p {
    color: #fafafa;
 }
 
@@ -330,10 +341,15 @@ footer {
 }
 
 .social-networks i {
-   font-size: 160%;
+   font-size: 400%;
    margin: 1%;
    padding: 5%;
    color: #3a3a3a;
+}
+
+.social-networks i:hover {
+   color: gold;
+   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.7));
 }
 
 /* media queries */
@@ -364,7 +380,7 @@ footer {
       padding: 0;
    }
 
-   #times > div {
+   #course-quick-links > div {
       width: 100%;
       clear: both;
       height: 150px;
