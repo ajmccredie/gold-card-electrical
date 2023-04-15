@@ -6,19 +6,24 @@
     border: none;
 }
 
-body {
+body p {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    color: #3a3a3a;
+    color: #454545;
 }
 
 /* headings and logo */
-
 h1, h2 {
     font-family: 'Changa', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #454545;
+}
+
+h3 {
+   font-family: 'Changa', sans-serif;
+   letter-spacing: 1px;
+   color: #fafafa;
 }
 
 /* logo and home page navigation top left */
@@ -88,6 +93,7 @@ h1, h2 {
    position: absolute;
    top: 15px;
    right: 15px;
+   color: #454545;
 }
 
 #menu-box {
@@ -190,6 +196,8 @@ h1, h2 {
    text-align: center;
    margin: -50px 0 20px 0;
    font-size: 280%;
+   letter-spacing: 1px;
+   line-height: 170%;
 }
 
  #page-base {
@@ -199,9 +207,9 @@ h1, h2 {
 
 .circuit-background {
       height: 600px;
-      background: url(../images/circuitry.png);
+      background: url(../images/circuitry.png) no-repeat center center;
       filter: sepia(0.9);
-      opacity: 50%;
+      opacity: 90%;
       position: absolute;
  }
 
@@ -312,6 +320,7 @@ h1, h2 {
 
 #course-quick-links div {
    color: #fafafa;
+
    background-color: rgba(0, 0, 0, .6);
    width: 20%;
    height: 300px;
@@ -348,8 +357,24 @@ footer {
 }
 
 .social-networks i:hover {
-   color: gold;
+   color: #bc9d30;
    filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.7));
+}
+
+/* about us container */
+#about-us-info {
+   font-size: 100%;
+   letter-spacing: 3px;
+   width: 70vw;
+   height: 300px;
+   margin-top: 300px;
+   padding-top: 10px;
+   padding-left: 10px;
+   background-color: rgba(241, 109, 107, .6);
+   border-radius: 3px;
+   margin-left: 0;
+   margin-right: 15vw;
+   position: absolute;
 }
 
 /* media queries */
