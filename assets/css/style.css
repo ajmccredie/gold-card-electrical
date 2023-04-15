@@ -48,18 +48,14 @@ h1, h2 {
 }
 
 .logo-home {
-   height: 70px;
- /*  text-align: left; */
-   border-radius: 50%;
-   margin-top: 4px;
-   margin-left: 10px;
+   height: 110px;
 }
 
 /* logo and home page navigation top left */
 #top-container {
    height: 160px;
    width: 100%;
-   background-color: antiquewhite;
+   background-color: #eee6c9;
    margin: 0;
    position: relative;
 }
@@ -67,7 +63,7 @@ h1, h2 {
 #logo-home-join {
    height: 140px;
    width: 800px;
-   background-color: red;
+   background-color: #eee6c9;
    margin: 0;
 }
 
@@ -79,8 +75,13 @@ h1, h2 {
    text-decoration: none;
 }
 
-#logo-home-join a:hover {
-   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.8))
+#logo-home-join .logo-home:hover {
+   filter: drop-shadow(0 0 5px rgb(188, 157, 48, 0.9));
+ /*  filter: drop-shadow(0 1px 3px rgba(241, 109, 107, .7)); */
+}
+
+#logo-home-join a:hover h1 {
+   filter: drop-shadow(0 0 5px rgb(188, 157, 48, 0.9));
  /*  filter: drop-shadow(0 1px 3px rgba(241, 109, 107, .7)); */
 }
 
@@ -89,7 +90,7 @@ h1, h2 {
    margin-left: 10px;
    height: 120px;
    width: 120px;
-   background-color: aquamarine;
+   background-color: #eee6c9;
 }
 
 #logo-words {
@@ -97,7 +98,7 @@ h1, h2 {
    width: 650px;
    margin-top: 35px;
    margin-bottom: 30px;
-   background-color: #5e0045;
+   background-color: #eee6c9;
    position: absolute;
    top: 0;
    left: 130px;
@@ -111,13 +112,59 @@ h1, h2 {
 #quick-contact {
    float: right;
    height: 140px;
-   background-color: hotpink;
+   background-color: #eee6c9;
    font-size: 90%;
    position: absolute;
    top: 15px;
    right: 0;
 }
 
+#menu {
+   font-size: 110%;
+   letter-spacing: 2px;
+   width: 100%;
+   top: 100px;
+   position: fixed;
+   z-index: 2;
+}
+
+
+/* balancing the line height */
+
+#menu-box {
+  width: 900px;
+  margin-left: 200px;
+  margin-top: -40px;
+  background-color: #eee6c9;
+  position: relative;
+  height: 50px;
+  padding-top: 10px;
+}
+
+#menu-box li {
+   list-style-type: none;
+   margin: 30px;
+   direction: rtl;
+   display: inline;
+   bottom: 0;
+}
+#menu-box a {
+   text-decoration: none;
+   font-family: 'Changa', sans-serif;
+   letter-spacing: 2px;
+   font-size: 150%;
+   color: inherit;
+}
+
+#menu-box a:hover {
+   border-bottom: 1px solid #3a3a3a;
+   filter: drop-shadow(0 0 5px rgb(188, 157, 48, 0.9));
+}
+
+.active {
+   border-bottom: 1px solid #3a3a3a;
+   filter: drop-shadow(0 0 5px rgb(188, 157, 48, 0.9));
+}
 
 /* navigation links */
 
