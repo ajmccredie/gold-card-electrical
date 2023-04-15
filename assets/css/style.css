@@ -22,40 +22,15 @@ h1, h2 {
 }
 
 /* logo and home page navigation top left */
-#logo {
-   top: 0;
-   margin-bottom: 20px;
-   position: fixed;
-   display: inline;
-   float: left;
-   direction: ltr;
-   width: 100%;
-   background-color: #fff;
-   z-index: 2;
-}
-
-#logo h1 {
-   font-size: 2.5rem;
-   margin-bottom: 10px;
-}
-
-#logo a:link {
-   text-decoration: none;
-}
-
-#logo a:hover {
-   filter: drop-shadow(0 1px 3px rgba(241, 109, 107, .7));
-}
-
 .logo-home {
    height: 110px;
 }
 
-/* logo and home page navigation top left */
 #top-container {
-   height: 160px;
+   height: 320px;
    width: 100%;
    background-color: #eee6c9;
+   background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255, 1) 90%);
    margin: 0;
    position: relative;
 }
@@ -63,7 +38,6 @@ h1, h2 {
 #logo-home-join {
    height: 140px;
    width: 800px;
-   background-color: #eee6c9;
    margin: 0;
 }
 
@@ -90,7 +64,6 @@ h1, h2 {
    margin-left: 10px;
    height: 120px;
    width: 120px;
-   background-color: #eee6c9;
 }
 
 #logo-words {
@@ -98,7 +71,6 @@ h1, h2 {
    width: 650px;
    margin-top: 35px;
    margin-bottom: 30px;
-   background-color: #eee6c9;
    position: absolute;
    top: 0;
    left: 130px;
@@ -112,30 +84,16 @@ h1, h2 {
 #quick-contact {
    float: right;
    height: 140px;
-   background-color: #eee6c9;
    font-size: 90%;
    position: absolute;
    top: 15px;
-   right: 0;
+   right: 15px;
 }
-
-#menu {
-   font-size: 110%;
-   letter-spacing: 2px;
-   width: 100%;
-   top: 100px;
-   position: fixed;
-   z-index: 2;
-}
-
-
-/* balancing the line height */
 
 #menu-box {
   width: 900px;
   margin-left: 200px;
   margin-top: -40px;
-  background-color: #eee6c9;
   position: relative;
   height: 50px;
   padding-top: 10px;
@@ -166,56 +124,7 @@ h1, h2 {
    filter: drop-shadow(0 0 5px rgb(188, 157, 48, 0.9));
 }
 
-/* navigation links */
-
-#menu {
-    font-size: 110%;
-    letter-spacing: 2px;
-    width: 100%;
-    top: 100px;
-    position: fixed;
-    z-index: 2;
-}
-
-
-/* balancing the line height */
-
-#menu div {
-   float: right;
-   width: 100%;
-   background-color: #fff;
-   position: relative;
-   height: 60px;
-   padding-top: 10px;
-}
-
-#menu li {
-    list-style-type: none;
-    margin: 30px;
-    direction: rtl;
-    display: inline;
-    bottom: 0;
-}
- #menu a {
-    text-decoration: none;
-    color: inherit;
- }
-
-.nav-splat {
-   background-image: url(../images/black-ink.png);
-}
-
- #menu a:hover {
-    border-bottom: 1px solid #3a3a3a;
-    font-weight: 150%;
- }
-
- .active {
-    filter: drop-shadow(0 0 10px rgba(137, 119, 17, 0.8));
- }
-
  /* hero image and supporting text */
-
  #hero-outer {
     height: 900px;
     width: 80vw;
@@ -223,7 +132,7 @@ h1, h2 {
     margin-left: 10vw;
     overflow: hidden;
     position: relative;
-    margin-top: 400px;
+    margin-top: -190px;
     background: url('../images/gold-smear-diagonal.png') no-repeat center center;
     background-size: contain;
     object-position: center;
@@ -265,34 +174,35 @@ h1, h2 {
     font-family: 'Changa', sans-serif;
     text-transform: uppercase;
     letter-spacing: 3px;
-    
     width: 300px;
     height: 200px;
-    
     padding-top: 10px;
     padding-left: 10px;
-    
     background-color: rgba(241, 109, 107, .7);
-    
+    border-radius: 1px;
     top: 30px;
     right: 0;
-
     position: absolute;
  }
 
-/* club ethos */
-
+/* why train with us? */
 #welcome {
    text-align: center;
    margin: 20px 0;
    font-size: 280%;
 }
 
- #club-ethos {
-    height: 600px;
-    background-image: url(../images/circuitry.png);
+ #page-base {
+   height: 600px;
+ /*   background-image: url(../images/circuitry.png);
     filter: grayscale(0.8);
-    opacity: 50%;
+    opacity: 50%; */
+ }
+
+ #page-base background-image {
+      background-image: url(../images/circuitry.png);
+      filter: grayscale(0.8);
+      opacity: 50%;
  }
 
  #left-about {
@@ -325,6 +235,7 @@ h1, h2 {
    clear: both;
    margin-bottom: 50px;
    font-size: 110%;
+   filter: grayscale(0.01);
  }
 
  .right-about-heading {
@@ -335,6 +246,16 @@ h1, h2 {
    margin-bottom: 50px;
    font-size: 110%;
  }
+
+ .left-about-heading h2 {
+   text-align: left;
+   font-size: 110%;
+ }
+
+ .left-about-heading p {
+   text-align: left;
+   font-size: 110%;
+}
 
  .right-about-heading h2 {
    text-align: right;
@@ -355,17 +276,16 @@ h1, h2 {
    border-width: 1px;
    border-radius: 50%;
    margin: 0 auto;
-   background: url(../images/gold-circle.png) no-repeat center center;
-   object-fit: fill;
  }
 
  #circle-cover-bg {
-   background: url('../images/breaker.png') no-repeat center center;
+   background: url('../images/lamp.png') no-repeat center center;
    height: 300px;
    width: 300px;
    object-fit: contain;
    background-size: contain;
    border-radius: 50%;
+   filter: grayscale(0);
 }
 
 /* course image */
