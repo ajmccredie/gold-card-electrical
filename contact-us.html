@@ -48,6 +48,86 @@
     </header>
     <section>
         <div class="circuit-background"></div>
+        <div id="form-container">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Your details</legend>
+                    <div>
+                        <label for="name-field">Name*</label>
+                        <input id="name-field" type="text" name="full_name" placeholder="Your name" required>
+                    </div>
+                    <div>
+                        <label for="email-field">Email*</label>
+                        <input id="email-field" type="email" name="email" placeholder="Your email" required>
+                    </div>
+                    <div>
+                        <label for="email-field">Phone Number*</label>
+                        <input id="phone-field" type="phone" name="phone" placeholder="Your number" required>
+                    </div>
+                </fieldset>  
+                <fieldset>
+                    <legend>Our courses</legend>
+                    <p>Which of our course(s) would you like more information about?</p>
+                    <div>
+                        <input type="checkbox" id="am2-checkbox" name="am2">
+                        <label for="am2-checkbox">AM2 Preparation</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="3d-regs-checkbox" name="3d-regs">
+                        <label for="3d-regs-checkbox">BS7671 18th Edition - 3 day</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="1d-regs-checkbox" name="1d-regs">
+                        <label for="1d-regs-checkbox">BS7671 18th Edition - 1 day</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="i-and-t-checkbox" name="i-and-t">
+                        <label for="i-and-t-checkbox">Inspection and Testing</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="nvq-checkbox" name="nvq">
+                        <label for="nvq-checkbox">NVQ(s)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ev-checkbox" name="ev">
+                        <label for="ev-checkbox">Electric Vehicle Charging</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pat-checkbox" name="pat">
+                        <label for="pat-checkbox">PAT Testing</label>
+                    </div>	
+                    <div>
+                        <input type="checkbox" id="isolation-checkbox" name="isolation">
+                        <label for="isolation-checkbox">Safe Isolation</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Queries</legend>
+                    <label for="feedback">Any additional information or queries</label>
+                    <br>
+                    <textarea id="feedback" rows="4" /*cols="87"*/ name="feedback"></textarea>
+                </fieldset>
+                <div>
+                    <input type="checkbox" id="agree-checkbox" name="agree" required>
+                    <label for="agree-checkbox">I agree I am happy to be contacted by telephone or email to discuss this enquiry further</label>
+                </div>
+                <button type="submit" id="submit-button">
+                    <strong>Send</strong>
+                </button>     
+            </form>
+        </div>
     </section>
+    <footer>
+        <ul class="social-networks home-page">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit our Twitter feed (opens in a new tab)"><i class="fa-brands fa-square-twitter"></i></a> 
+            </li>
+        </ul>
+    </footer>
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/8c6dac4a35.js" crossorigin="anonymous"></script>
 </body>
 </html>

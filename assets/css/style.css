@@ -392,6 +392,54 @@ footer {
    position: absolute;
 }
 
+/* contact form styling */
+#form-container {
+   width: 70vw;
+   margin-left: 15vw;
+   background-color: rgba(250, 250, 250, 0.7);
+}
+
+#form-container div {
+   margin: 15px;
+   padding: 5px;
+}
+
+fieldset {
+   border: solid 1px #454545;
+}
+
+legend {
+   font-family: 'Changa', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #454545;
+}
+
+label {
+   font-family: 'Poppins', sans-serif;
+   letter-spacing: 2px;
+   color: #454545;
+}
+
+.name-field, .email-field, .phone-field {
+   background-color:rgba(250, 250, 250, 0.7);
+   border: solid 1px #454545;
+   border-radius: 5px;
+}
+
+.submit-button {
+   height: 40px;
+   background-color:rgba(241, 109, 107, .6);
+   text-align: center;
+   border:rgba(0, 0, 0, .6);
+   font-family: 'Changa', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #454545;
+   font-size: 200%;
+}
+
+
 /* terms and conditions scroll-box and formatting */
 #ts-cs {
    width: 70vw;
