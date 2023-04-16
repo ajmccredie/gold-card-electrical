@@ -47,7 +47,9 @@
         </div>
     </header>
     <section>
+        <div id="contact-bg">
         <div class="circuit-background"></div>
+            <div id="blur-box2"></div>
         <div id="form-container">
             <form action="#" method="POST">
                 <fieldset>
@@ -61,8 +63,8 @@
                         <input id="email-field" type="email" name="email" placeholder="Your email" required>
                     </div>
                     <div>
-                        <label for="email-field">Phone Number*</label>
-                        <input id="phone-field" type="phone" name="phone" placeholder="Your number" required>
+                        <label for="phone-field">Phone Number*</label>
+                        <input id="phone-field" type="number" name="phone" placeholder="Your number" required>
                     </div>
                 </fieldset>  
                 <fieldset>
@@ -105,7 +107,7 @@
                     <legend>Queries</legend>
                     <label for="feedback">Any additional information or queries</label>
                     <br>
-                    <textarea id="feedback" rows="4" /*cols="87"*/ name="feedback"></textarea>
+                    <textarea id="feedback" rows="4" cols name="feedback"></textarea>
                 </fieldset>
                 <div>
                     <input type="checkbox" id="agree-checkbox" name="agree" required>
@@ -116,6 +118,7 @@
                 </button>     
             </form>
         </div>
+    </div>
     </section>
     <footer>
         <ul class="social-networks home-page">
