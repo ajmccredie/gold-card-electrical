@@ -401,7 +401,7 @@ footer {
    height: 1300px;
 }
 
-.circuit-background2 {
+.circuit-background {
    height: 1200px;
    top: 0;
    width: 100%;
@@ -533,8 +533,6 @@ input[type=submit] {
    display: inline-block;
  }
  
-
- 
  .container {
    border-radius: 5px;
    background-color: #f2f2f2;
@@ -569,11 +567,23 @@ input[type=submit] {
  }
 
 /* terms and conditions scroll-box and formatting */
+.ts-cs-heading {
+   width: 70vw;
+   margin-left: 15vw;
+   margin-top: -25px;
+   font-size: 200%;
+   z-index: 3;
+}
+
 #ts-cs {
    width: 70vw;
    height: 600px;
    margin-left: 15vw;
+   margin-top: -5px;
+   margin-bottom: 180px;
+   padding: 10px 10px 20px 35px;
    border:rgba(0, 0, 0, 0.7) 1px solid;
+   border-top: none;
    overflow-y: scroll;
 }
 
@@ -583,7 +593,12 @@ input[type=submit] {
 
 #ts-cs p {
    font-family: 'Times New Roman', Times, serif;
-   line-height: 180%;   
+   line-height: 180%; 
+   text-indent: -15px;  
+}
+
+#ts-cs .further-indent {
+   text-indent: 30px;
 }
 
 /* media queries */
