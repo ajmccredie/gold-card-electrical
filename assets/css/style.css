@@ -379,19 +379,53 @@ footer {
 }
 
 /* about us container */
+#about-box {
+   width: 100vw;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.gold-paint {
+   height: 800px;
+   width: 60vw;
+   margin-left: 5vw;
+   overflow: hidden;
+   position: relative;
+   margin-top: -190px;
+   background: url('../images/gold-top-bottom-borders.png') no-repeat center center;
+   background-size: contain;
+   object-position: center;
+   object-fit: fill;
+   object-position: center;
+}
+
 #about-us-info {
-   font-size: 100%;
+   font-size: 120%;
    letter-spacing: 3px;
-   width: 70vw;
-   height: 300px;
-   margin-top: 300px;
+   font-weight: 800;
+   width: 60vw;
+   margin-top: 200px;
    padding-top: 10px;
+   padding-bottom: 30px;
    padding-left: 10px;
-   background-color: rgba(241, 109, 107, .6);
+   background-color: rgba(255, 255, 255, .8);
    border-radius: 3px;
    margin-left: 0;
    margin-right: 15vw;
    position: absolute;
+}
+
+.map-box {
+   margin-top: 5px;
+   width: 30vw;
+   height: 400px;
+   margin-right: 5vw;
+   border: 3px solid rgba(0, 0, 0, .6);
+   background-size: contain;
+   object-position: center;
+   object-fit: fill;
+   object-position: center;
+   overflow: hidden;
 }
 
 /* contact form styling */
