@@ -99,7 +99,11 @@ h3 {
    opacity: 0;
 }
 
-#menu-box {
+.line {
+   opacity: 0;
+}
+
+.menu-box {
   width: 900px;
   margin-left: 200px;
   margin-top: -40px;
@@ -108,14 +112,14 @@ h3 {
   padding-top: 10px;
 }
 
-#menu-box li {
+.menu-box li {
    list-style-type: none;
    margin: 30px;
    direction: rtl;
    display: inline;
    bottom: 0;
 }
-#menu-box a {
+.menu-box a {
    text-decoration: none;
    font-family: 'Changa', sans-serif;
    letter-spacing: 2px;
@@ -123,7 +127,7 @@ h3 {
    color: inherit;
 }
 
-#menu-box a:hover {
+.menu-box a:hover {
    border-bottom: 1px solid #3a3a3a;
    filter: drop-shadow(0 0 5px rgb(188, 157, 48, 0.9));
 }
@@ -749,10 +753,37 @@ input[type=submit] {
 
 /* For larger to medium screens size from 1200px wide and down */
 @media screen and (max-width: 1200px) {
-   #club-ethos {
+   #company-ethos {
       width: 65%;
       height: 1200px;
       margin: 0 auto;
+   }
+
+   #logo-words h1 {
+      font-size: 2.3rem;
+      margin-bottom: 10px;
+   }
+   
+   #quick-contact {
+      float: right;
+      height: 140px;
+      font-size: 90%;
+      position: absolute;
+      top: 100px;
+      right: 15px;
+      color: #454545;
+   }
+
+   #cover-text {
+      width: 290px;
+      height: 170px;
+      padding-top: 10px;
+      padding-left: 10px;
+      background-color: rgba(241, 109, 107, .7);
+      border-radius: 1px;
+      top: 230px;
+      right: 0;
+      position: absolute;
    }
 
    #welcome {
@@ -782,10 +813,6 @@ input[type=submit] {
 
    hr {
       display: none;
-   }
-
-   .line-container {
-      opacity: 1;
    }
 
    .menu-box {
@@ -821,6 +848,7 @@ input[type=submit] {
     }
     
     .line-container {
+      opacity: 1;
       margin: 50px;
       width: 40px;
       height: 30px;
@@ -828,9 +856,11 @@ input[type=submit] {
   }
   
   .line {
+      opacity: 1;
       width: 100%;
       height: 2px;
       background-color: #454545;
+      margin: 14px;
       border-radius: 10px;
       transition: transform 1s ease, opacity 0.5s ease;
       transform-origin: left;
@@ -851,7 +881,6 @@ input[type=submit] {
   .line-container.active .line-3 {
       transform: rotate(-45deg);
   }
-
 }
 
 /* for medium screen sizes from 950px wide and down */
@@ -869,7 +898,7 @@ input[type=submit] {
       left: 0;
    }
 
-   #club-ethos {
+   #company-ethos {
       width: 90%;
       height: 1200px;
       margin: 0 auto;
