@@ -378,6 +378,109 @@ footer {
    background-color: #bc9d30;;
 }
 
+/* courses main-page and individual page styling */
+#page-width {
+   height: 700px;
+   width: 100vw;
+   display: flex;
+   justify-content: center;
+}
+
+#outer-course-container {
+   height: 700px;
+   width: 700px;
+   background: url(../images/gold-circle.png) no-repeat center center;
+   position: relative;
+   background-size: contain;
+   transition: all 1s ease;
+}
+
+.course-container {
+   width: 60px;
+   height: 60px;
+   position: relative;
+}
+
+.button {
+   width: 30px;
+   height: 30px;
+   background-color: slateblue;
+   cursor: pointer;
+   position: absolute;
+   transition: all 1s ease;
+}
+
+.button:nth-child(1) {
+   top: 0;
+   left: 0;
+   border-radius: 10px 0 0 0;
+}
+
+.button:nth-child(2) {
+   top: 0;
+   right: 0;
+   border-radius: 0 10px 0 0;
+}
+
+.button:nth-child(3) {
+   bottom: 0;
+   right: 0;
+   border-radius: 0 0 10px 0;
+}
+
+.button:nth-child(4) {
+   bottom: 0;
+   left: 0;
+   border-radius: 0 0 0 10px;
+}
+
+.main-icon {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 50px;
+   position: absolute;
+   color: white;
+   transition: all 1s ease;
+}
+
+.item-sm {
+   opacity: 0;
+}
+
+.course-container:hover .item-sm {
+   opacity: 1;
+}
+
+.course-container:hover .main-icon {
+   transform: scale(5) rotate(45deg);
+}
+
+.course-container:hover .button {
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+}
+
+.course-container:hover .button:nth-child(1) {
+   transform: translate(5px, -50px);
+}
+
+.course-container:hover .button:nth-child(2) {
+   transform: translate(50px, 5px);
+}
+
+.course-container:hover .button:nth-child(3) {
+   transform: translate(-50px, -5px);
+}
+
+.course-container:hover .button:nth-child(4) {
+   transform: translate(-5px, 50px);
+}
+
 /* about us container */
 #about-box {
    width: 100vw;
@@ -396,7 +499,6 @@ footer {
    background-size: contain;
    object-position: center;
    object-fit: fill;
-   object-position: center;
 }
 
 #about-us-info {
