@@ -931,7 +931,7 @@ input[type=submit] {
 /* for medium screen sizes from 700px wide and down */
 @media screen and (max-width: 700px) {
    #logo-words h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
       margin-bottom: 10px;
    }
    
@@ -946,18 +946,3 @@ input[type=submit] {
       left: 0;
    }
 }
-   /*#cover-text {
-      font-size: 100%;
-      font-family: 'Changa', sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      width: 300px;
-      height: 200px;
-      padding-top: 10px;
-      padding-left: 10px;
-      background-color: rgba(241, 109, 107, .7);
-      border-radius: 1px;
-      top: 30px;
-      right: 0;
-      position: absolute;
-   }*/
