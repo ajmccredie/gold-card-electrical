@@ -779,6 +779,38 @@ input[type=submit] {
    hr {
       display: none;
    }
+
+   #menu-box {
+      width: 200px;
+      margin-left: 0px;
+      margin-top: -40px;
+      position: relative;
+      padding-top: 10px;
+      align-items: center;
+    }
+    
+    #menu-box li {
+       list-style-type: none;
+       margin: 30px;
+       direction: rtl;
+       display: inline;
+       bottom: 0;
+    }
+    
+    #menu-box a {
+       text-decoration: none;
+       font-family: 'Changa', sans-serif;
+       letter-spacing: 2px;
+       font-size: 150%;
+       color: inherit;
+    }
+    
+    #menu-box a:hover {
+       border-bottom: 1px solid #3a3a3a;
+       filter: drop-shadow(0 0 5px rgb(188, 157, 48, 0.9));
+    }
+    
+
 }
 
 /* for medium screen sizes from 950px wide and down */
