@@ -1,6 +1,8 @@
 // Need to use code to ensure that the DOM has fully loaded //
 // Need to move code so that nothing creates a global variable //
-
+//document.addEventListener("DOMContentLoaded", function() {
+    //let
+//});
 
 // create squares in js to replace the list elements //
 const squaresContainer = document.getElementById('squares');

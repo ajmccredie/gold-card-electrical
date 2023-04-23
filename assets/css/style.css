@@ -428,26 +428,31 @@ footer {
    position: absolute;
    transition: all 1s ease;
    z-index: 2;
+   text-decoration: none;
 }
 
 .button:nth-child(1) {
    border-radius: 50%;
-   background-color: #454545;
+ /*  background-color: #454545;*/
+   background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
 .button:nth-child(2) {
    border-radius: 50%;
-   background-color: #454545;
+ /*  background-color: #454545; */
+   background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
 .button:nth-child(3) {
    border-radius: 50%;
-   background-color: #454545;
+ /*  background-color: #454545; */
+   background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
 .button:nth-child(4) {
    border-radius: 50%;
-   background-color: #454545;
+/*   background-color: #454545; */
+   background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
 /*.main-icon {
@@ -470,10 +475,6 @@ footer {
    opacity: 1;
 }
 
-/*.course-container:hover .main-icon {
-   transform: scale(5) rotate(45deg);
-}*/
-
 #page-width:hover .button {
    border-radius: 0;
    width: 0;
@@ -484,7 +485,7 @@ footer {
 #page-width:hover .button:nth-child(1) {
    transform: translate(250px, -50px);
    background: url(../images/gold-smudge-four.png) no-repeat center center;
-   width: 250px;
+   width: 350px;
    height: 100px;
    background-size: contain;
    border-radius: 0;
@@ -495,28 +496,34 @@ footer {
 #page-width:hover .button:nth-child(2) {
    transform: translate(-100px, 150px);
    background: url(../images/gold-smudge-two.png) no-repeat center center;
-   width: 250px;
+   width: 350px;
    height: 100px;
    background-size: contain;
    border-radius: 0;
+   text-align: center;
+   padding: 30px;
 }
 
 #page-width:hover .button:nth-child(3) {
-   transform: translate(-450px, -50px);
+   transform: translate(-550px, -50px);
    background: url(../images/gold-smudge-eight.png) no-repeat center center;
-   width: 250px;
+   width: 350px;
    height: 100px;
    background-size: contain;
    border-radius: 0;
+   text-align: center;
+   padding: 30px;
 }
 
 #page-width:hover .button:nth-child(4) {
-   transform: translate(-100px, -350px);
+   transform: translate(-200px, -350px);
    background: url(../images/gold-smudge-five.png) no-repeat center center;
-   width: 250px;
+   width: 350px;
    height: 100px;
    background-size: contain;
    border-radius: 0;
+   text-align: center;
+   padding: 30px;
 }
 
 /* about us container */
