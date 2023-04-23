@@ -1,3 +1,7 @@
+// Need to use code to ensure that the DOM has fully loaded //
+// Need to move code so that nothing creates a global variable //
+
+
 // create squares in js to replace the list elements //
 const squaresContainer = document.getElementById('squares');
 const numberOfSquares = 16;
@@ -29,12 +33,13 @@ function selectColor() {
     // 0-16
     const randomColor = Math.floor(Math.random() * colors.length);
     const selected = colors[randomColor];
-    colors.splice(random, 1);
+    colors.splice(randomColor, 1);
+    console.log(selected);
     return selected;
 }
 
 while(i < numberOfSquares) {
-    document.createElement('li');
+    let square = document.createElement('li');
     const color = selectColor();
     square.style.background = color;
     squaresContainer.appendChild(square);
