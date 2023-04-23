@@ -1,3 +1,9 @@
+// create squares in js to replace the list elements //
+const squaresContainer = document.getElementById('squares');
+const numberOfSquares = 16;
+let i = 0;
+
+
 // create pairs of colors to hopefully eventually be replaced with images //
 
 let colors = [
@@ -21,13 +27,16 @@ let colors = [
 
 function selectColor() {
     // 0-16
-    const random = Math.floor(Math.random() * colors.length)
-    const selected = colors[random];
+    const randomColor = Math.floor(Math.random() * colors.length);
+    const selected = colors[randomColor];
     colors.splice(random, 1);
     return selected;
 }
 
-selectColor()
-selectColor(
-    console.log(colors)
-)
+while(i < numberOfSquares) {
+    document.createElement('li');
+    const color = selectColor();
+    square.style.background = color;
+    squaresContainer.appendChild(square);
+    i++;
+}
