@@ -114,7 +114,7 @@ h3 {
 
 .menu-box li {
    list-style-type: none;
-   margin: 30px;
+   margin: 30px 25px;
    direction: rtl;
    display: inline;
    bottom: 0;
@@ -777,6 +777,49 @@ input[type=submit] {
 
 #ts-cs .further-indent {
    text-indent: 30px;
+}
+
+/* games */
+#memory-match-game {
+   font-size: 180%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #454545;
+   letter-spacing: 2px;
+   margin-bottom: 180px;
+}
+
+#memory-match-game #score {
+   font-size: 2rem;
+   font-weight: bold;
+   margin: 1rem 0;
+}
+
+#memory-match-game button {
+   /* font-family*/
+   border-radius: 5px;
+   border: none;
+   padding: 0.5rem;
+   font-size: 1rem;
+   letter-spacing: 1px;
+   cursor: pointer;
+   margin-bottom: 30px;
+}
+
+#memory-match-game ul {
+   display: grid;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows: repeat(4, 100px);
+   gap: 10px;
+   padding: 0;
+}
+
+#memory-match-game li {
+   list-style-type: none;
+   border: 0.5px solid rgb(2, 0, 36);
+   border-radius: 10px;
+   cursor: pointer;
 }
 
 /* media queries */
