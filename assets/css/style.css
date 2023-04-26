@@ -389,9 +389,12 @@ footer {
 /* courses main-page and individual page styling */
 #page-width {
    height: 700px;
+   top: -60px;
+   margin-top: 60px;
    width: 100vw;
    display: flex;
    justify-content: center;
+   overflow: hidden;
 }
 
 #outer-course-container {
@@ -511,7 +514,7 @@ footer {
 }
 
 #page-width:hover .button:nth-child(2) {
-   transform: translate(-100px, 150px);
+   transform: translate(-100px, 30px);
    background: url(../images/gold-smudge-two.png) no-repeat center center;
    width: 350px;
    height: 100px;
