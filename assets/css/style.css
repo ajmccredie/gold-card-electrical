@@ -1043,4 +1043,12 @@ input[type=submit] {
       overflow: wrap;
       left: 0;
    }
+
+   #circle-container {
+      opacity: 0;
+    }
+   
+    #circle-cover-bg {
+      opacity: 0;
+   }
 }
