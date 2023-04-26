@@ -553,14 +553,18 @@ footer {
       font-weight: 800;
       width: 60vw;
       margin-top: 200px;
+      margin-left: 40px;
       padding-top: 10px;
       padding-bottom: 30px;
       padding-left: 10px;
       background-color: rgba(255, 255, 255, .8);
       border-radius: 3px;
-      margin-left: 0;
       margin-right: 15vw;
-      position: absolute;  
+      position: relative;  
+}
+.course-information h3 {
+   font-size: 180%;
+   color: #454545;
 }
 
 /* about us container */
