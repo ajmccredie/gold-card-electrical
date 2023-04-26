@@ -395,6 +395,7 @@ footer {
    display: flex;
    justify-content: center;
    overflow: hidden;
+   z-index: 1;
 }
 
 #outer-course-container {
@@ -409,7 +410,7 @@ footer {
 #outer-course-container h1 {
    text-align: center;
    font-size: xx-large;
-   color: turquoise;
+   color: #fafafa;
    position: absolute;
    margin-top: 130px;
    margin-left: 90px;
@@ -453,39 +454,33 @@ footer {
 
 .button:nth-child(1) {
    border-radius: 50%;
- /*  background-color: #454545;*/
    background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
 .button:nth-child(2) {
    border-radius: 50%;
- /*  background-color: #454545; */
    background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
 .button:nth-child(3) {
    border-radius: 50%;
- /*  background-color: #454545; */
    background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
 .button:nth-child(4) {
    border-radius: 50%;
-/*   background-color: #454545; */
    background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
 }
 
-/*.main-icon {
-   width: 100%;
-   height: 100%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   font-size: 50px;
-   position: absolute;
-   color: white;
-   transition: all 1s ease;
-}*/
+.button:nth-child(5) {
+   border-radius: 50%;
+   background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
+}
+
+.button:nth-child(6) {
+   border-radius: 50%;
+   background-image: radial-gradient(#454545 40%, #bc9d30 55%, #fff 5%);
+}
 
 .item-sm {
    opacity: 0;
@@ -538,6 +533,28 @@ footer {
 #page-width:hover .button:nth-child(4) {
    transform: translate(-200px, -350px);
    background: url(../images/gold-smudge-five.png) no-repeat center center;
+   width: 350px;
+   height: 100px;
+   background-size: contain;
+   border-radius: 0;
+   text-align: center;
+   padding: 30px;
+}
+
+#page-width:hover .button:nth-child(5) {
+   transform: translate(-100px, -350px);
+   background: url(../images/gold-smudge-one.png) no-repeat center center;
+   width: 350px;
+   height: 100px;
+   background-size: contain;
+   border-radius: 0;
+   text-align: center;
+   padding: 30px;
+}
+
+#page-width:hover .button:nth-child(6) {
+   transform: translate(0, -250px);
+   background: url(../images/gold-smudge-seven.png) no-repeat center center;
    width: 350px;
    height: 100px;
    background-size: contain;
