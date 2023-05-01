@@ -1,7 +1,7 @@
 <?php
 
 #Receive user input
-$email_address = $_POST['email_address'];
+$email_address = $_POST['email'];
 $full_name = $_POST['full_name'];
 $phone = $_POST['phone'];
 $course = $_POST['course'];
