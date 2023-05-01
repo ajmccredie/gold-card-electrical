@@ -59,7 +59,7 @@
         <div class="circuit-background"></div>
             <div id="blur-box2"></div>
         <div id="form-container">
-            <form action="/contact_form.php" method="POST">
+            <form action="/contact.php" method="post">
                 <fieldset>
                     <legend>Your details</legend>
                     <div>
@@ -79,35 +79,35 @@
                     <legend>Our courses</legend>
                     <p>Which of our course(s) would you like more information about?</p>
                     <div>
-                        <input type="checkbox" id="am2-checkbox" name="am2">
+                        <input type="checkbox" id="am2-checkbox" name="course[]" value="am2">
                         <label for="am2-checkbox">AM2 Preparation</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="3d-regs-checkbox" name="3d-regs">
+                        <input type="checkbox" id="3d-regs-checkbox" name="course[]" value="3d_regs">
                         <label for="3d-regs-checkbox">BS7671 18th Edition - 3 day</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="1d-regs-checkbox" name="1d-regs">
+                        <input type="checkbox" id="1d-regs-checkbox" name="course[]" value="1d_regs">
                         <label for="1d-regs-checkbox">BS7671 18th Edition - 1 day</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="i-and-t-checkbox" name="i-and-t">
+                        <input type="checkbox" id="i-and-t-checkbox" name="course[]" value="i_and_t">
                         <label for="i-and-t-checkbox">Inspection and Testing</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="nvq-checkbox" name="nvq">
+                        <input type="checkbox" id="nvq-checkbox" name="course[]" value="nvq">
                         <label for="nvq-checkbox">NVQ(s)</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="ev-checkbox" name="ev">
+                        <input type="checkbox" id="ev-checkbox" name="course[]" value="ev">
                         <label for="ev-checkbox">Electric Vehicle Charging</label>
                     </div>
                     <div>
-                        <input type="checkbox" id="pat-checkbox" name="pat">
+                        <input type="checkbox" id="pat-checkbox" name="course[]" value="pat">
                         <label for="pat-checkbox">PAT Testing</label>
                     </div>	
                     <div>
-                        <input type="checkbox" id="isolation-checkbox" name="isolation">
+                        <input type="checkbox" id="isolation-checkbox" name="course[]" value="isolation">
                         <label for="isolation-checkbox">Safe Isolation</label>
                     </div>
                 </fieldset>
