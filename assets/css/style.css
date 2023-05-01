@@ -582,10 +582,9 @@ footer {
 /* format for individual course pages */
 .course-information {
       font-size: 120%;
-      letter-spacing: 3px;
       font-weight: 800;
-      width: 60vw;
-      margin-top: 200px;
+      width: 80vw;
+      margin-top: 0;
       margin-left: 40px;
       padding-top: 10px;
       padding-bottom: 30px;
@@ -595,8 +594,15 @@ footer {
       margin-right: 15vw;
       position: relative;  
 }
+
+.course-information h1 {
+    font-size: 250%;
+    color: #454545;
+ }
+
 .course-information h3 {
    font-size: 180%;
+   letter-spacing: 3px;
    color: #454545;
 }
 
