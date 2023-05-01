@@ -388,8 +388,8 @@ footer {
 
 /* courses main-page and individual page styling */
 #page-width {
-   height: 800px;
-   margin-top: 0;
+   height: 760px;
+   margin-top: -60px;
    padding-top: 60px;
    width: 100vw;
    display: flex;
@@ -482,6 +482,11 @@ footer {
    background-image: radial-gradient(#7b4c20 40%, #bc9d30 55%, #fff 5%);
 }
 
+.button:nth-child(7) {
+    border-radius: 50%;
+    background-image: radial-gradient(#7b4c20 40%, #bc9d30 55%, #fff 5%);
+ }
+
 .item-sm {
    opacity: 0;
 }
@@ -498,7 +503,7 @@ footer {
 }
 
 #page-width:hover .button:nth-child(1) {
-   transform: translate(250px, -50px);
+   transform: translate(-650px, -50px);
    background: url(../images/gold-smudge-four.png) no-repeat center center;
    width: 350px;
    height: 100px;
@@ -509,7 +514,7 @@ footer {
 }
 
 #page-width:hover .button:nth-child(2) {
-   transform: translate(-100px, 30px);
+   transform: translate(-400px, 100px);
    background: url(../images/gold-smudge-two.png) no-repeat center center;
    width: 350px;
    height: 100px;
@@ -531,7 +536,7 @@ footer {
 }
 
 #page-width:hover .button:nth-child(4) {
-   transform: translate(-200px, -350px);
+   transform: translate(-500px, -250px);
    background: url(../images/gold-smudge-five.png) no-repeat center center;
    width: 350px;
    height: 100px;
@@ -553,7 +558,7 @@ footer {
 }
 
 #page-width:hover .button:nth-child(6) {
-   transform: translate(0, -250px);
+   transform: translate(0, 50px);
    background: url(../images/gold-smudge-seven.png) no-repeat center center;
    width: 350px;
    height: 100px;
@@ -562,6 +567,17 @@ footer {
    text-align: center;
    padding: 30px;
 }
+
+#page-width:hover .button:nth-child(7) {
+    transform: translate(50px, -150px);
+    background: url(../images/gold-smudge-three.png) no-repeat center center;
+    width: 350px;
+    height: 100px;
+    background-size: contain;
+    border-radius: 0;
+    text-align: center;
+    padding: 30px;
+ }
 
 /* format for individual course pages */
 .course-information {
