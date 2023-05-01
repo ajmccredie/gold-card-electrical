@@ -8,6 +8,8 @@
 const squaresContainer = document.getElementById('squares');
 const numberOfSquares = 16;
 let i = 0;
+let square1, square2;
+let clickCount = 0;
 
 
 // create pairs of colors to hopefully eventually be replaced with images //
@@ -43,7 +45,43 @@ function selectColor() {
 while(i < numberOfSquares) {
     let square = document.createElement('li');
     const color = selectColor();
-    square.style.background = color;
+    //square.style.background = color;
+    square.setAttribute("data-color", color);
     squaresContainer.appendChild(square);
     i++;
+}
+
+const squares = document.querySelectorAll('li')
+for(const square of squares) {
+    square.addEventListener('click', squareClicked);
+}
+
+function squareClicked() {
+    clickCount++;
+    clickCount === 1 ? (square1 = this) : (square2 = this);
+    if (clickCount === 1) {
+        square1.style.background = square1.getAttribute("data-color");
+    } else {
+        square2.style.background = square2.getAttribute("data-color");
+        checkMatch()
+    }
+}
+
+function checkMatch() {
+    let match = square1.getAttribute('data-color') === square2.getAttribute('data-color');
+    if(!match) {
+        noMatch()
+    } else {
+        isMatch()
+    }
+}
+
+function noMatch() {
+    clickCount = 0;
+    console.log('no match');
+}
+
+function isMatch() {
+    clickCount = 0; 
+    console.log('match!')
 }
