@@ -70,7 +70,9 @@ function squareClicked() {
 function checkMatch() {
     let match = square1.getAttribute('data-color') === square2.getAttribute('data-color');
     if(!match) {
-        noMatch()
+        setTimeout( function {
+            noMatch();
+        }, 500); 
     } else {
         isMatch()
     }
@@ -78,6 +80,10 @@ function checkMatch() {
 
 function noMatch() {
     clickCount = 0;
+    square1.style.background = "";
+    square2.style.background = "";
+    square1 = "";
+    square2 = "";
     console.log('no match');
 }
 
