@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&9!g())eo2%$x8=r!!_6*^axkcw$!va^**%+p83w5th*3g+t&7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://ajmccredie-goldcardelec-609o9frblhp.ws-eu116.gitpod.io/']
 
 
 # Application definition
@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'goldcard.urls'
+ROOT_URLCONF = 'gold_card_electrical.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'goldcard.wsgi.application'
+WSGI_APPLICATION = 'gold_card_electrical.wsgi.application'
 
 
 # Database

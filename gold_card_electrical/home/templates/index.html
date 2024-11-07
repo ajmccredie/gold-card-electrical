@@ -1,0 +1,21 @@
+{% extends "main/base.html" %}
+
+{% block title %}Welcome to Our Corporate Site{% endblock %}
+
+{% block content %}
+<section class="hero bg-light">
+    <div class="container text-center py-5">
+        <img src="{% static 'main/images/hero-image.jpg' %}" alt="Hero Image" class="img-fluid" style="width: 100%; max-height: 500px; object-fit: cover;">
+        <h1 class="display-4 mt-4">Delivering Quality Electrical Training</h1>
+        <p class="lead">We are committed to delivering the highest quality training to our learners.</p>
+        <a href="#" class="btn btn-primary btn-lg mt-3">Learn More</a>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Our mission is to bring value and make an impact.</p>
+    </div>
+</section>
+{% endblock %}
